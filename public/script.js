@@ -9,7 +9,7 @@ const categories = {
   transporte: 'Transporte',
   entretenimiento: 'Entretenimiento',
   servicios: 'Servicios/Facturas',
-  estudio: 'Estudio PGC',
+  estudio: 'Estudio Poli',
   gustos: 'Gustos culposos'
 };
 
@@ -211,7 +211,7 @@ function showAlert(message, type = 'info') {
 }
 
 document.getElementById('resetBtn').addEventListener('click', () => {
-  if (confirm('¿Deseas comenzar un nuevo día? Se borrarán todos los gastos.')) {
+  if (confirm('Se borrarán todos los gastos.')) {
     state = { dayName: '', budget: 0, expenses: [] };
     document.getElementById('alertsContainer').innerHTML = '';
     switchScreen('setup');
